@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: black;
+  background-image: linear-gradient(135deg, white, black);
+  background-position: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  text-align: left;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.navbar a:hover {
+  background-color: gray;
+  text-decoration: underline;
+}
+
+h1 {
+  color: blue;
+}
+
+h2 {
+  color: white;
+  z-index: 0;
+}
+
+.the-card {
+  top: 57;
+  position: relative;
+  width: 1080;
+  height: 608;
+  margin: auto;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+  background-image: url(akira.jpg) center;
+}
+
+.the-card-2 {
+  top: 63;
+  position: relative;
+  width: 1080;
+  height: 608;
+  margin: auto;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+  background-image: url(itsYou_Pro.jpg) center;
+  background-size: contain;
+}
+
+.the-card:hover,
+.the-card-2:hover {
+  transform: rotateY(180deg);
+}
+
+.card-front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  background-image: url(akira.jpg);
+}
+
+.card-front-2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  background-image: url(itsYou_Pro.jpg);
+}
+
+.card-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(red, black);
+  color: black;
+  backface-visibility: hidden;
+  text-align: center;
+  transform: rotateY(180deg);
+}
